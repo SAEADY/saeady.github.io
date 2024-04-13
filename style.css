@@ -1,0 +1,370 @@
+body {
+    background-color: black;
+    color: #EFEFD0;
+    font-size: 50px;
+    font-family: "Schibsted Grotesk", sans-serif;
+
+}
+
+h1 {
+    font-size: 9em;
+    font-family: jua;
+}
+
+h2 {
+    font-size: 1em;
+    font-family: "Schibsted Grotesk", sans-serif;
+}
+
+.title_sketch_container {
+    position: absolute;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9em;
+}
+
+.title_sketch_container h2 {
+    font-family: "reenie-beanie", sans-serif;
+    color: #FF6B35;
+    z-index: 2002;
+}
+
+.main_title {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 900px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 400px;
+}
+
+
+
+.nav {
+    color: #FF6B35;
+    display: absolute;
+    width: 60%;
+    height: 300px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 20%;
+    
+}
+
+.intro {
+    color: black;
+    background-color: #FF6B35;
+    height: 800px;
+    width: 100%;
+    margin-top: 1100px;
+    padding-left: 120px;
+    padding-top: 20px;
+    padding-right: 120px;
+    
+    
+}
+
+.intro h2 {
+    font-size: 2em;
+    color: #EFEFD0;
+    line-height: 0px;
+}
+
+.catalogue {
+    padding-left: 120px;
+    padding-top: 120px;
+    height: 1200px;
+}
+
+.paragraph {
+    width: 40%;
+}
+
+.catalogue h2 {
+    font-size: 2em;
+}
+
+.image_container {
+    position: absolute;
+    height: 400px;
+    width: 700px;
+    top: 1480px;
+    left: 450px;
+}
+
+.intro h3 {
+    font-family: "reenie-beanie", sans-serif;
+    font-size: 3em;
+    color: #EFEFD0;
+    line-height: 0px;
+}
+
+
+
+.container {
+    min-height: 100vh;
+    width: 50%;
+    right: 0;
+    top: 2230px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    background: #131313;
+    font-family:'Helvetica Neue', sans-serif;
+    
+}
+
+h1 a {
+  font-size: 80px;
+  color: #FF6B35;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.popover {
+   display: none;
+}
+
+
+
+.popover:target {
+  position: absolute;
+  right: 0;
+  top: 2150px;
+  width: 200%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.popover .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: row;
+  width: 0;
+  height: 0;
+  color: #fff;
+  background-color: #191919;
+  animation: 1s grow ease forwards;
+  text-align: center;
+}
+
+
+
+
+.popover p {
+  padding: 50px;
+  opacity: 0;
+  animation: 1s fadeIn ease forwards 1s;
+}
+
+.popover .close::after {
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: #FF6B35;
+  color: #fff;
+  content: "×";
+  cursor: pointer;
+  opacity: 0; 
+  animation: 1s fadeIn ease forwards .5s;
+}
+
+@keyframes grow {
+  100% {
+    height: 100%;
+    width: 100%;
+ }
+}
+
+@keyframes fadeIn {
+100% {
+  opacity: 1;
+ }
+}
+
+@keyframes slideUp {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+.link_to_catalogue {
+    width: 50%;
+    height: 1000px;
+    position: absolute;
+    right: 0;
+    top: 2400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.link_to_catalogue a img {
+    height: auto;
+    width: 800px;
+    
+}
+
+.link_to_catalogue img {
+    position: inherit;
+    top: 150px;
+    right: 500px;
+    
+}
+
+.process_sketch img {
+    margin-top: 200px;
+    width: 80%;
+}
+.process_sketch{
+    display: flex;
+    justify-content: center;
+}
+
+.information {
+    padding-top: 120px;
+    margin-top: 200px;
+    margin-left: 120px;
+   
+}
+
+.information h1 {
+    color: #FF6B35;
+    font-size: 100px;
+}
+
+.information h2 {
+    font-family: "reenie-beanie", sans-serif;
+    font-size: 80px;
+}
+
+.information p {
+    width: 50%;
+}
+
+.information figcaption {
+    font-size: 20px;
+    width: 20%;
+}
+
+.image_container {
+    width: 50%;
+}
+
+.image_container_02 img {
+    margin-top: 200px;
+    
+}
+
+.information_summary {
+    font-size: smaller;
+    position: absolute;
+    left: 900px;
+    top: 5500px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 2500px;
+}
+
+
+
+.notations  {
+    color: #FF6B35;
+    position: relative;
+    bottom: 1550px;
+    width: 30%;
+    left: 2000px;
+    font-family: "reenie-beanie", sans-serif;
+    text-align: center;
+    transform: rotate(2.5deg)
+}
+
+.quote {
+    width: 60%;
+    position: relative;
+    left: 700px;
+}
+.quote h2 {
+    font-size: 150px;
+    font-family: "reenie-beanie", sans-serif;
+    text-align: center;
+}
+
+
+.engaging {
+    width: 100%;
+    height: 1700px;
+    margin-top: 400px;
+    background-color: #FF6B35;
+    padding-left: 100px;
+    padding-top: 50px;
+    margin-right: 100px;
+    color: #131313;
+}
+
+
+.engaging h2 {
+    font-size: 150px;
+    width: 70%;
+}
+
+.engaging ul {
+    display: flex;
+    justify-content: space-between;
+    color: #EFEFD0;
+    font-weight: bolder;
+    list-style: none;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 150px;
+}
+
+.engaging ul p {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.engaging ul li {
+    width:700px
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.footer a {
+    color: #FF6B35;
+
+}
